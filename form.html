@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a call</title>
+    <style>
+        form {
+            text-align: left;
+        }
+        input{
+            color:grey;
+            font-size: 20px;
+            width: 500px;
+        }
+        label{
+            display: inline-block;
+            text-align: left;
+        }
+        h1{
+            text-align: center;
+            color: orange;
+        }
+        h4{
+            text-align: center;
+            color: #454545;
+        }
+        .button{
+            background-color: orange;
+            color: white;
+            border: thin;
+            cursor: pointer;
+
+        }
+        fieldset{
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius:8px;
+        }
+        .bg-img{
+            background-image: url("bg-img.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .container{
+            background-color: white;
+        }
+    </style>
+</head>
+<body class="bg-img">
+    <fieldset style="border:2px solid orange; width:10px" class="container">
+    <h1>Book a call</h1>
+    <h4>Book a call slot our representative call you within 1hr of selected time.</h4>
+    <form action="#" onsubmit="onsignup(event)">
+        <hr>
+        <label for="username" class="form-control" >Name:</label><br>
+        <input type="text" id="username" style="border-radius:6px;" required><br> <br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" style="border-radius:6px;" required><br> <br>
+        <label for="phone" >Phone:</label><br>
+        <input type="tel" id="phone" style="border-radius:6px;" required> <br> <br>
+        <label for="tfc">Time for call:</label><br> <br>
+        <input type="date" id="tfc" style="width: 247px; border-radius:6px;" required>
+        <input type="time" id="tfc" style="width: 247px; border-radius:6px;" required> <br> <br>
+        <input type="submit" value="GET A CALL" class="button" style="border-radius:6px;">
+    </form>
+</fieldset>
+<script>
+    function onsignup(event)
+    {
+        event.preventDefault();
+    }
+</script>
+</body>
+</html>
